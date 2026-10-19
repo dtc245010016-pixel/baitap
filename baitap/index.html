@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Newsletter - Version 1 (Corporate Blue)</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0052CC;
+            --secondary-color: #F4F5F7;
+            --accent-color: #FFAB00;
+            --text-color: #172B4D;
+            --darker-primary: #003D99;
+            --darker-accent: #E69500;
+        }
+
+        body {
+            background-color: #EBECF0;
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        .primary-bg { background-color: var(--primary-color) !important; }
+        .secondary-bg { background-color: var(--secondary-color) !important; }
+        .accent-bg { background-color: var(--accent-color) !important; }
+        
+        .text-primary-color { color: var(--primary-color) !important; }
+        .text-dark-custom { color: var(--text-color) !important; }
+
+        .btn-primary-custom {
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            border: none;
+            font-weight: 600;
+        }
+        .btn-primary-custom:hover {
+            background-color: var(--darker-primary);
+            color: #FFFFFF;
+        }
+
+        .btn-accent-custom {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            border: none;
+            font-weight: bold;
+        }
+        .btn-accent-custom:hover {
+            background-color: var(--darker-accent);
+            color: var(--text-color);
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <!-- Header -->
+        <header class="text-center mb-4 p-4 primary-bg text-white rounded-3">
+            <h1 class="fw-bold">Trello Newsletter #1</h1>
+            <p class="mb-0">Tối ưu hiệu suất & Quản lý dự án chuyên nghiệp</p>
+        </header>
+
+        <!-- Main Banner Card -->
+        <section class="card mb-4">
+            <div class="card-body p-4">
+                <h2 class="card-title text-primary-color fw-bold">Chào mừng bạn đến với bản tin tháng này!</h2>
+                <p class="card-text text-dark-custom fs-5">
+                    Khám phá ngay các tính năng mới giúp đội ngũ của bạn làm việc hiệu quả hơn 50% mỗi ngày.
+                </p>
+                <a href="#" class="btn btn-accent-custom btn-lg">Tìm hiểu tính năng mới</a>
+            </div>
+        </section>
+
+        <!-- Feature Cards -->
+        <section class="row mb-4">
+            <div class="col-md-6 mb-3">
+                <div class="card h-100 secondary-bg text-dark-custom">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary-color">Tự động hóa Butler</h3>
+                        <p class="card-text">Thiết lập quy trình tự động cho bảng Trello chỉ trong vài cú nhấp chuột đơn giản.</p>
+                        <a href="#" class="btn btn-primary-custom btn-sm">Xem hướng dẫn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card h-100 secondary-bg text-dark-custom">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary-color">Tích hợp Power-Ups</h3>
+                        <p class="card-text">Kết nối Trello với Slack, Google Drive, và GitHub để đồng bộ công việc tức thì.</p>
+                        <a href="#" class="btn btn-primary-custom btn-sm">Khám phá ứng dụng</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center p-3 primary-bg text-white rounded-3">
+            <p class="mb-0">&copy; 2026 Trello Newsletter. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
